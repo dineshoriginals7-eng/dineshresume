@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dinesh R | AI & Data Science</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #e9eef5;
+    font-family: "Inter", Arial, sans-serif;
+    color: #172033;
+}
+
+/* A4 PAGE */
+.resume {
+    width: 210mm;
+    height: 297mm;
+    margin: 20px auto;
+    background: white;
+    display: grid;
+    grid-template-columns: 61mm 1fr;
+    overflow: hidden;
+    box-shadow: 0 10px 35px rgba(0,0,0,0.15);
+}
+
+/* ================= SIDEBAR ================= */
+
+.sidebar {
+    background: #101b2d;
+    color: white;
+    padding: 25px 18px;
+}
+
+.photo {
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+    margin: 0 auto 18px;
+    display: block;
+    object-fit: cover;
+    border: 4px solid #27c5e8;
+    background: white;
+}
+
+.sidebar-name {
+    text-align: center;
+    font-size: 19px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+}
+
+.sidebar-role {
+    text-align: center;
+    font-size: 9px;
+    color: #27c5e8;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+.side-section {
+    margin-bottom: 21px;
+}
+
+.side-title {
+    color: #27c5e8;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 9px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+
+.contact-item {
+    font-size: 8px;
+    line-height: 1.45;
+    margin-bottom: 7px;
+    color: #dce5ef;
+    word-break: break-word;
+}
+
+.contact-item strong {
+    color: white;
+}
+
+.contact-item a {
+    color: #dce5ef;
+    text-decoration: none;
+}
+
+.skill {
+    margin-bottom: 8px;
+}
+
+.skill-name {
+    font-size: 8px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3px;
+    color: #e7edf5;
+}
+
+.bar {
+    width: 100%;
+    height: 4px;
+    background: rgba(255,255,255,0.13);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.bar span {
+    display: block;
+    height: 100%;
+    background: #27c5e8;
+    border-radius: 5px;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.tag {
+    font-size: 7px;
+    padding: 4px 6px;
+    border: 1px solid rgba(255,255,255,0.18);
+    border-radius: 4px;
+    color: #dce5ef;
+}
+
+.language {
+    font-size: 8px;
+    color: #dce5ef;
+    margin-bottom: 6px;
+}
+
+.interest {
+    font-size: 8px;
+    line-height: 1.5;
+    color: #dce5ef;
+}
+
+/* ================= MAIN ================= */
+
+.main {
+    padding: 25px 28px 20px;
+    position: relative;
+}
+
+.top-line {
+    width: 45px;
+    height: 4px;
+    background: #27c5e8;
+    margin-bottom: 10px;
+}
+
+.name {
+    font-size: 28px;
+    line-height: 1;
+    font-weight: 800;
+    color: #101b2d;
+    letter-spacing: -1px;
+}
+
+.name span {
+    color: #27a9ca;
+}
+
+.main-role {
+    font-size: 10px;
+    font-weight: 700;
+    color: #66758a;
+    margin-top: 8px;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+}
+
+.profile {
+    font-size: 8.5px;
+    line-height: 1.55;
+    color: #566476;
+    margin-top: 13px;
+    max-width: 560px;
+}
+
+/* SECTION */
+
+.section {
+    margin-top: 18px;
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.section-title h2 {
+    font-size: 10px;
+    color: #101b2d;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-weight: 800;
+}
+
+.section-title::after {
+    content: "";
+    height: 1px;
+    flex: 1;
+    background: #dce3ea;
+}
+
+.section-title::before {
+    content: "";
+    width: 5px;
+    height: 5px;
+    background: #27c5e8;
+    border-radius: 50%;
+}
+
+/* EDUCATION */
+
+.education {
+    display: grid;
+    grid-template-columns: 1fr 85px;
+    gap: 10px;
+    padding: 9px 11px;
+    border-left: 3px solid #27c5e8;
+    background: #f6f9fb;
+    margin-bottom: 7px;
+}
+
+.education h3 {
+    font-size: 9px;
+    color: #172033;
+    font-weight: 700;
+}
+
+.education p {
+    font-size: 7.5px;
+    color: #657387;
+    margin-top: 3px;
+    line-height: 1.45;
+}
+
+.education-right {
+    text-align: right;
+}
+
+.education-right strong {
+    display: block;
+    font-size: 8px;
+    color: #27a9ca;
+}
+
+.education-right span {
+    font-size: 7px;
+    color: #687689;
+}
+
+/* PROJECTS */
+
+.project {
+    border: 1px solid #e1e7ed;
+    border-radius: 5px;
+    padding: 10px 11px;
+    margin-bottom: 8px;
+    background: white;
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.project h3 {
+    font-size: 9px;
+    font-weight: 800;
+    color: #152035;
+}
+
+.project-type {
+    font-size: 6.5px;
+    color: #27a9ca;
+    font-weight: 700;
+    background: #eaf9fc;
+    padding: 3px 5px;
+    border-radius: 3px;
+}
+
+.project p {
+    font-size: 7.5px;
+    color: #5c697a;
+    line-height: 1.5;
+}
+
+.project ul {
+    margin: 5px 0 0 14px;
+}
+
+.project li {
+    font-size: 7.2px;
+    color: #5c697a;
+    line-height: 1.45;
+    margin-bottom: 2px;
+}
+
+/* TWO COLUMNS */
+
+.two-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+/* EXPERIENCE */
+
+.experience-item {
+    padding-left: 10px;
+    border-left: 2px solid #dbe4eb;
+}
+
+.experience-item h3 {
+    font-size: 8.5px;
+    color: #172033;
+    margin-bottom: 4px;
+}
+
+.experience-item p {
+    font-size: 7.5px;
+    color: #5c697a;
+    line-height: 1.5;
+}
+
+/* SKILLS */
+
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.skill-chip {
+    font-size: 7px;
+    color: #334154;
+    background: #f2f6f9;
+    border: 1px solid #dce4eb;
+    padding: 5px 7px;
+    border-radius: 4px;
+}
+
+/* HIGHLIGHTS */
+
+.highlight {
+    margin-bottom: 6px;
+    font-size: 7.5px;
+    color: #596779;
+    line-height: 1.45;
+}
+
+.highlight strong {
+    color: #172033;
+}
+
+/* FOOTER */
+
+.footer {
+    position: absolute;
+    bottom: 11px;
+    left: 28px;
+    right: 28px;
+    padding-top: 6px;
+    border-top: 1px solid #e1e6eb;
+    display: flex;
+    justify-content: space-between;
+    font-size: 6.5px;
+    color: #8491a1;
+}
+
+/* PRINT */
+
+@media print {
+
+    @page {
+        size: A4;
+        margin: 0;
+    }
+
+    body {
+        background: white;
+    }
+
+    .resume {
+        margin: 0;
+        width: 210mm;
+        height: 297mm;
+        box-shadow: none;
+    }
+
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 850px) {
+
+    .resume {
+        transform-origin: top left;
+        transform: scale(0.75);
+        margin-bottom: -70mm;
+    }
+
+}
+</style>
+</head>
+
+<body>
+
+<div class="resume">
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+        <!--
+        IMPORTANT:
+        Put your photo in the same folder as this HTML
+        and name it IMG_0222.JPG
+        -->
+
+        <img src="IMG_0222.JPG" class="photo" alt="Dinesh R">
+
+        <div class="sidebar-name">DINESH R</div>
+
+        <div class="sidebar-role">
+            AI & Data Science Student
+        </div>
+
+
+        <!-- CONTACT -->
+
+        <div class="side-section">
+
+            <div class="side-title">Contact</div>
+
+            <div class="contact-item">
+                <strong>Phone</strong><br>
+                8590309787
+            </div>
+
+            <div class="contact-item">
+                <strong>Email</strong><br>
+                <a href="mailto:dineshoriginals7@gmail.com">
+                    dineshoriginals7@gmail.com
+                </a>
+            </div>
+
+            <div class="contact-item">
+                <strong>Location</strong><br>
+                Coimbatore, Tamil Nadu
+            </div>
+
+            <div class="contact-item">
+                <strong>LinkedIn</strong><br>
+                <a href="https://www.linkedin.com/in/dinesh-r-0bbb9a373">
+                    linkedin.com/in/dinesh-r-0bbb9a373
+                </a>
+            </div>
+
+            <div class="contact-item">
+                <strong>GitHub</strong><br>
+                <a href="https://github.com/dineshoriginals7-eng">
+                    github.com/dineshoriginals7-eng
+                </a>
+            </div>
+
+        </div>
+
+
+        <!-- PROGRAMMING -->
+
+        <div class="side-section">
+
+            <div class="side-title">Programming</div>
+
+            <div class="skill">
+                <div class="skill-name">
+                    <span>Python</span>
+                </div>
+                <div class="bar">
+                    <span style="width:82%"></span>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-name">
+                    <span>Java</span>
+                </div>
+                <div class="bar">
+                    <span style="width:78%"></span>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-name">
+                    <span>C / C++</span>
+                </div>
+                <div class="bar">
+                    <span style="width:75%"></span>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-name">
+                    <span>JavaScript</span>
+                </div>
+                <div class="bar">
+                    <span style="width:80%"></span>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- TECHNOLOGIES -->
+
+        <div class="side-section">
+
+            <div class="side-title">Technologies</div>
+
+            <div class="tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Flask</span>
+                <span class="tag">REST API</span>
+                <span class="tag">Git</span>
+                <span class="tag">GitHub</span>
+                <span class="tag">VS Code</span>
+                <span class="tag">IoT</span>
+                <span class="tag">AI / ML</span>
+            </div>
+
+        </div>
+
+
+        <!-- LANGUAGES -->
+
+        <div class="side-section">
+
+            <div class="side-title">Languages</div>
+
+            <div class="language">English</div>
+            <div class="language">Malayalam</div>
+            <div class="language">Tamil</div>
+            <div class="language">Hindi</div>
+
+        </div>
+
+
+        <!-- INTERESTS -->
+
+        <div class="side-section">
+
+            <div class="side-title">Interests</div>
+
+            <div class="interest">
+                AI & Machine Learning<br>
+                Software Development<br>
+                Full-Stack Development<br>
+                IoT & Emerging Technologies<br>
+                Data & AI Applications
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <main class="main">
+
+        <div class="top-line"></div>
+
+        <div class="name">
+            Dinesh <span>R</span>
+        </div>
+
+        <div class="main-role">
+            B.Tech Artificial Intelligence & Data Science
+        </div>
+
+        <p class="profile">
+            Motivated Artificial Intelligence & Data Science student with
+            hands-on experience in web development, AI-based applications,
+            IoT concepts and hackathon-driven problem solving. Interested
+            in building practical technology solutions that combine
+            software, AI and real-world systems.
+        </p>
+
+
+        <!-- EDUCATION -->
+
+        <section class="section">
+
+            <div class="section-title">
+                <h2>Education</h2>
+            </div>
+
+            <div class="education">
+
+                <div>
+                    <h3>
+                        B.Tech — Artificial Intelligence & Data Science
+                    </h3>
+
+                    <p>
+                        Rathinam Technical Campus, Coimbatore
+                    </p>
+                </div>
+
+                <div class="education-right">
+
+                    <strong>2025 – 2029</strong>
+
+                    <span>
+                        CGPA: 8.6 / 10
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="education">
+
+                <div>
+                    <h3>
+                        Higher Secondary — 12th
+                    </h3>
+
+                    <p>
+                        Seventh Day Adventist Higher Secondary School
+                    </p>
+                </div>
+
+                <div class="education-right">
+
+                    <strong>82%</strong>
+
+                    <span>School</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="education">
+
+                <div>
+                    <h3>
+                        Secondary — 10th
+                    </h3>
+
+                    <p>
+                        Seventh Day Adventist Higher Secondary School
+                    </p>
+                </div>
+
+                <div class="education-right">
+
+                    <strong>78%</strong>
+
+                    <span>School</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PROJECTS -->
+
+        <section class="section">
+
+            <div class="section-title">
+                <h2>Featured Projects</h2>
+            </div>
+
+
+            <!-- LIFELINK -->
+
+            <div class="project">
+
+                <div class="project-header">
+
+                    <h3>
+                        LifeLink — AI & IoT Emergency Healthcare Ecosystem
+                    </h3>
+
+                    <span class="project-type">
+                        AI + IoT
+                    </span>
+
+                </div>
+
+                <p>
+                    Connected emergency healthcare concept designed to
+                    improve communication between ambulance crews,
+                    paramedics, hospitals and doctors.
+                </p>
+
+                <ul>
+
+                    <li>
+                        AI-assisted emergency triage and hospital/doctor
+                        allocation concept.
+                    </li>
+
+                    <li>
+                        IoT-based monitoring of pulse, ECG, blood pressure
+                        and oxygen levels.
+                    </li>
+
+                    <li>
+                        Intelligent traffic-clearing concept for faster
+                        ambulance movement.
+                    </li>
+
+                    <li>
+                        Developed a functional web prototype with
+                        technical presentations and demonstrations.
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- SMARTSTAY -->
+
+            <div class="project">
+
+                <div class="project-header">
+
+                    <h3>
+                        SmartStay — Hostel Management Web Application
+                    </h3>
+
+                    <span class="project-type">
+                        WEB
+                    </span>
+
+                </div>
+
+                <p>
+                    Digital hostel management platform designed to
+                    simplify resident, room and administrative workflows.
+                </p>
+
+                <ul>
+
+                    <li>
+                        Dashboard-focused interface for practical
+                        hostel management.
+                    </li>
+
+                    <li>
+                        Developed using HTML, CSS and JavaScript.
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- PORTFOLIO -->
+
+            <div class="project">
+
+                <div class="project-header">
+
+                    <h3>
+                        Personal Portfolio Website
+                    </h3>
+
+                    <span class="project-type">
+                        FRONTEND
+                    </span>
+
+                </div>
+
+                <p>
+                    Responsive personal portfolio created to showcase
+                    technical skills, academic work and projects.
+                </p>
+
+                <ul>
+
+                    <li>
+                        Designed a clean responsive user interface.
+                    </li>
+
+                    <li>
+                        Built using HTML, CSS and JavaScript.
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </section>
+
+
+        <!-- TWO COLUMN SECTION -->
+
+        <div class="two-column">
+
+            <!-- HACKATHON -->
+
+            <section class="section">
+
+                <div class="section-title">
+                    <h2>Hackathon Experience</h2>
+                </div>
+
+                <div class="experience-item">
+
+                    <h3>
+                        Technology Hackathons & Innovation
+                    </h3>
+
+                    <p>
+                        Participated in technology-focused hackathons
+                        involving real-world problem solving, ideation,
+                        solution architecture and rapid prototyping.
+                    </p>
+
+                    <p style="margin-top:5px;">
+                        Worked on problem statement analysis, technical
+                        presentations, demonstrations, project videos
+                        and solution documentation.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- TECHNICAL FOCUS -->
+
+            <section class="section">
+
+                <div class="section-title">
+                    <h2>Technical Focus</h2>
+                </div>
+
+                <div class="skill-list">
+
+                    <span class="skill-chip">
+                        Data Structures
+                    </span>
+
+                    <span class="skill-chip">
+                        OOP
+                    </span>
+
+                    <span class="skill-chip">
+                        Computer Networks
+                    </span>
+
+                    <span class="skill-chip">
+                        Cloud Computing
+                    </span>
+
+                    <span class="skill-chip">
+                        Database Fundamentals
+                    </span>
+
+                    <span class="skill-chip">
+                        REST APIs
+                    </span>
+
+                    <span class="skill-chip">
+                        AI Applications
+                    </span>
+
+                    <span class="skill-chip">
+                        IoT Systems
+                    </span>
+
+                </div>
+
+            </section>
+
+        </div>
+
+
+        <!-- CORE SKILLS -->
+
+        <section class="section">
+
+            <div class="section-title">
+                <h2>Core Skills</h2>
+            </div>
+
+            <div class="skill-list">
+
+                <span class="skill-chip">
+                    Problem Solving
+                </span>
+
+                <span class="skill-chip">
+                    Team Collaboration
+                </span>
+
+                <span class="skill-chip">
+                    Creative Thinking
+                </span>
+
+                <span class="skill-chip">
+                    Technical Presentation
+                </span>
+
+                <span class="skill-chip">
+                    Project Ideation
+                </span>
+
+                <span class="skill-chip">
+                    Rapid Prototyping
+                </span>
+
+                <span class="skill-chip">
+                    Adaptability
+                </span>
+
+            </div>
+
+        </section>
+
+
+        <!-- HIGHLIGHTS -->
+
+        <section class="section">
+
+            <div class="section-title">
+                <h2>Highlights</h2>
+            </div>
+
+            <div class="highlight">
+                <strong>AI + Real-World Systems:</strong>
+                Interested in combining AI with practical software and
+                IoT-based solutions.
+            </div>
+
+            <div class="highlight">
+                <strong>Project Driven:</strong>
+                Focused on learning through practical projects,
+                prototypes and technology experimentation.
+            </div>
+
+            <div class="highlight">
+                <strong>Career Direction:</strong>
+                AI/ML, software development, full-stack development,
+                data & AI applications and emerging technologies.
+            </div>
+
+        </section>
+
+
+        <!-- FOOTER -->
+
+        <div class="footer">
+
+            <span>
+                Dinesh R · B.Tech AI & Data Science
+            </span>
+
+            <span>
+                Rathinam Technical Campus · Coimbatore
+            </span>
+
+        </div>
+
+    </main>
+
+</div>
+
+</body>
+</html>
